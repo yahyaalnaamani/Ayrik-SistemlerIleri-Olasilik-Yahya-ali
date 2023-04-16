@@ -1,1 +1,22 @@
+question :
 
+Calculate the probability of getting heads or tails when a coin is flipped 1000 times?
+
+
+from random import randint, choice
+tail, head = 0, 0
+coin = ["tail", "head"]
+for i in range(1000): # we try 1000 times
+  a = choice(coin)
+  if a == "tail":
+    tail += 1
+  if a == "head":
+    head += 1
+
+print("Possibility of getting tail:", 100 * tail / 1000)
+print("probability of getting head:", 100 * head / 1000)
+
+
+   
+Possibility of getting tail: 53.3
+probability of getting head: 46.7
