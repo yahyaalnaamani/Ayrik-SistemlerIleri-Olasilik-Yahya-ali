@@ -1,0 +1,27 @@
+In a pack of 52 cards, a card is drawn at random without replacement. Find the probability of drawing a queen followed by a jack.
+
+Solution:
+
+P (drawing a queen in the first place) = 4 / 52
+
+P (drawing jack in the second place given that queen is in the first place) = 4 / 51
+
+P (drawing a queen followed by a jack)
+
+
+# Total number of cards in a pack
+total_cards = 52
+
+# Number of queens in a pack
+queens = 4
+
+# Number of jacks in a pack
+jacks = 4
+
+# Probability of drawing a queen followed by a jack
+prob_queen_jack = (queens/total_cards) * (jacks/(total_cards-1))
+
+# Displaying the result
+print("The probability of drawing a queen followed by a jack from a pack of 52 cards is", round(prob_queen_jack, 4))
+
+The probability of drawing a queen followed by a jack from a pack of 52 cards is 0.006
